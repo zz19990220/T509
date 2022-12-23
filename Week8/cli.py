@@ -5,7 +5,7 @@ import random
 from Human import Human
 from Bot import Bot
 from Game import Game
-yieldy
+
 if __name__ == '__main__':
     with_bot = input('Playing with bot?  (Y/N)').upper()
 
