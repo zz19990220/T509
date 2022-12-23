@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <title> Tic Tac Toe</title>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Tic Tac Toe</h1>
+  </div>
+  
+  <div class="content">
+    <h2>Choose Human or Bot for the other player</h2>
+    <form action="/play" method="post">
+      <label class="radio">
+        <input type="radio" name="player_type" value="human">
+          Player X: Human
+        <input type="radio" name="player_type" value="bot">
+          Player X: Bot
+      </label>
+      <button class="button1" type="submit">Start</button>
+    </form>
+  </div>
+
+</body>
+</html>
