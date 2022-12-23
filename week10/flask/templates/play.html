@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="static/style.css" />
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+
+  <h2>Game Board</h2>
+
+  <table class="game_board">
+    <tr>
+      <td class="P0">{{pos1}}</td>
+      <td class="PX">{{pos2}}</td>
+      <td class="P0">{{pos3}}</td>
+    </tr>
+    <tr>
+      <td class="PX">{{pos4}}</td>
+      <td class="P0">{{pos5}}</td>
+      <td class="PX">{{pos6}}</td>
+    </tr>
+    <tr>
+      <td class="P0">{{pos7}}</td>
+      <td class="PX">{{pos8}}</td>
+      <td class="P0">{{pos9}}</td>
+    </tr>
+  </table>
+
+  <div class="mark">
+    <form action="/move" method="POST">
+      <label>
+        Row
+        <input type="number" name="row" id="row" min="0" max="2">
+        Column
+        <input type="number" name="column" id="column" min="0" max="2">
+      </label>
+      <button class="button2" type="submit">Choose</button>
+    </form>
+  </div>
+  <result>{{result}}</result>
+
+  <div>
+    <form action="/stats" method="POST">
+      <button class="button2" type="submit">Statistic</button>
+    </form>
+  </div>
+
+</body>
+</html>
+
+    
